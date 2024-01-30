@@ -1,0 +1,106 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+header {
+    color: white;
+    background-color: black;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.title {
+    font-style: italic;
+}
+
+.stopwatch__container {
+    padding: 2rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: fit-content;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    margin: 2rem;
+    border: black 4px solid;
+    box-shadow: 0 3px 40px gray
+}
+
+.time__text {
+    font-size: 6rem;
+    margin: 0 0 1rem;
+}
+
+.button {
+    margin: 1rem 0.5rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #95BF47;
+    color: black
+}
+
+button:hover {
+    background-color: #64943E;
+}
+
+.lap__container {
+    display: flex;
+    justify-content: center;
+}
+
+.laps__list {
+    margin: 0;
+    padding: 1rem 1rem 2rem 1rem;
+    width: 80%;
+}
+
+.lap__item {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+
+.lap__item::marker {
+    font-weight: bold;
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    background-color: #F0EFEC;
+    width: 100%;
+    min-height: 5rem;
+}
